@@ -134,7 +134,8 @@ module hci_interconnect #(
       );
     end
   endgenerate
-
+  
+/*..............................................Marwan's Modification .......................................................................*/
   // 64 narrow internal interfaces (32-bit)
   hci_core_intf #(
     .DW ( 32             ),
@@ -178,16 +179,17 @@ module hci_interconnect #(
     end
   endgenerate
 
-
+/*.....................................................................................................................*/
 
 
   generate
     if(N_HWPE > 0) begin: hwpe_interconnect_gen
+    /*..............................................Marwan's Modification .......................................................................*/
       hci_log_interconnect #(
-        .N_CH0  ( 64             ), // Expanded to 64 ports
-        .N_CH1  ( 0              ),
-        .N_MEM  ( N_MEM          ),
-        .IW     ( IW             ),
+        .N_CH0  ( 64                  ), // Expanded to 64 ports
+        .N_CH1  ( 0                   ),
+        .N_MEM  ( N_MEM               ),
+        .IW     ( IW                  ),
         .AWC    ( AWC                 ),
         .AWM    ( AWM-2               ),
         .DW     ( 32                  ), // Narrow width per port
@@ -201,7 +203,7 @@ module hci_interconnect #(
         .cores  ( hwpe_narrow         ), // Use the 64 narrow interfaces here
         .mems   ( hwpe_mem            )
       );
-
+/*.....................................................................................................................*/
       hci_shallow_interconnect #(
         .NB_CHAN ( N_MEM )
       ) i_shallow_interconnect (

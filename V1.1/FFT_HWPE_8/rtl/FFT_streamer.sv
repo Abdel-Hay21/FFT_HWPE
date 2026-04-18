@@ -73,7 +73,8 @@ module FFT_streamer #(
   // the HWPE-Stream, since the source also performs realignment, it will
   // expose a 32-bit larger HCI TCDM interface.
   hci_core_source #(
-    .DATA_WIDTH ( BW ), .MISALIGNED_ACCESSES(0)
+    .DATA_WIDTH          ( BW ), 
+    .MISALIGNED_ACCESSES ( 0  )
   ) i_source (
     .clk_i       ( clk_i                         ),
     .rst_ni      ( rst_ni                        ),
@@ -90,7 +91,8 @@ module FFT_streamer #(
   // the HWPE-Stream, since the sink also performs realignment, it will
   // expose a 32-bit larger HCI TCDM interface.
   hci_core_sink #(
-    .DATA_WIDTH ( BW ) , .MISALIGNED_ACCESSES(0)
+    .DATA_WIDTH          ( BW ) ,
+    .MISALIGNED_ACCESSES ( 0  )
   ) i_sink (
     .clk_i       ( clk_i                       ),
     .rst_ni      ( rst_ni                      ),

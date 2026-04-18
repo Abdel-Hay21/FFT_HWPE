@@ -68,7 +68,7 @@ module cluster_interconnect_wrap
     if( USE_HETEROGENEOUS_INTERCONNECT || !HWPE_PRESENT ) begin : hci_gen
 
       hci_interconnect #(
-        .N_HWPE ( 8             ),
+        .N_HWPE ( 8             	   ),
         .N_CORE ( NB_CORES                 ),
         .N_DMA  ( NB_DMAS                  ),
         .N_EXT  ( 4                        ),
@@ -83,15 +83,15 @@ module cluster_interconnect_wrap
         .OWH    ( 1                        ),
         .AWM    ( ADDR_MEM_WIDTH+2         )
       ) i_hci_interconnect (
-        .clk_i  ( clk_i               ),
-        .rst_ni ( rst_ni              ),
-        .clear_i( 1'b0                ),
-        .ctrl_i ( hci_ctrl_i          ),
-        .cores  ( core_tcdm_slave     ),
+        .clk_i  ( clk_i              	),
+        .rst_ni ( rst_ni             	),
+        .clear_i( 1'b0                	),
+        .ctrl_i ( hci_ctrl_i          	),
+        .cores  ( core_tcdm_slave       ),
         .hwpe   ( hwpe_tcdm_slave [7:0] ),
-        .dma    ( dma_slave           ),
-        .ext    ( ext_slave           ),
-        .mems   ( tcdm_sram_master    )
+        .dma    ( dma_slave           	),
+        .ext    ( ext_slave           	),
+        .mems   ( tcdm_sram_master    	)
       );
 
     end else begin : no_hci_gen
