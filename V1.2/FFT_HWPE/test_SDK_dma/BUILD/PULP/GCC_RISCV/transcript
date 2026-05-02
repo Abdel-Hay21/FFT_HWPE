@@ -14,7 +14,7 @@
 # //
 # source tcl_files/run.tcl
 # vsim -c -quiet vopt_tb -L models_lib -L vip_lib -t ps "+nowarnTRAN" "+nowarnTSCALE" "+nowarnTFMPC" "+TB_PATH=/home/abdelhay21/GP/sim/../../fe/tb/" "+UVM_NO_RELNOTES" "+ENTRY_POINT=0x1c008080" -permit_unmatched_virtual_intf "+VSIM_PATH=/home/abdelhay21/GP/sim" -gUSE_SDVT_SPI=0 -gUSE_SDVT_CPI=0 -gBAUDRATE=115200 -gENABLE_DEV_DPI=0 -gLOAD_L2=JTAG -gUSE_SDVT_I2S=0 
-# Start time: 22:49:47 on Apr 26,2026
+# Start time: 07:01:15 on May 02,2026
 # ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
 # Please contact Questa support at http://supportnet.mentor.com
 # ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
@@ -23,22 +23,22 @@
 # Please contact Questa support at http://supportnet.mentor.com
 # ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
 # Please contact Questa support at http://supportnet.mentor.com
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
-# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(58).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 185
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 186
 # ** Warning: (vsim-3770) Failed to find user specified function 'jtag_tick' in DPI C/C++ source files.
 #    Time: 0 ps  Iteration: 0  Region: /SimJTAG_sv_unit File: /home/abdelhay21/GP/rtl/tb/SimJTAG.sv
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_soc/i_FLL_digital/TQ has no driver.
@@ -100,7 +100,21 @@ run -all
 # [pulp_tap_if] WRITE32 burst @1c000c00 for        1024 bytes.
 # [pulp_tap_if] WRITE32 burst @1c001000 for        1024 bytes.
 # [pulp_tap_if] WRITE32 burst @1c001400 for        1024 bytes.
-# [pulp_tap_if] WRITE32 burst @1c001800 for          40 bytes.
+# [pulp_tap_if] WRITE32 burst @1c001800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c001c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c002000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c002400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c002800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c002c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c003000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c003400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c003800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c003c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c004000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c004400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c004800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c004c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c005000 for         808 bytes.
 # [pulp_tap_if] WRITE32 burst @1c008000 for        1024 bytes.
 # [pulp_tap_if] WRITE32 burst @1c008400 for        1024 bytes.
 # [pulp_tap_if] WRITE32 burst @1c008800 for        1024 bytes.
@@ -113,63 +127,63 @@ run -all
 # [pulp_tap_if] WRITE32 burst @1c00a400 for        1024 bytes.
 # [pulp_tap_if] WRITE32 burst @1c00a800 for        1024 bytes.
 # [pulp_tap_if] WRITE32 burst @1c00ac00 for        1024 bytes.
-# [pulp_tap_if] WRITE32 burst @1c00b000 for         768 bytes.
+# [pulp_tap_if] WRITE32 burst @1c00b000 for         784 bytes.
 # [pulp_tap_if] WRITE32 burst @1c010000 for         424 bytes.
-# [TB] 16243901ns - Resuming the CORE
-# [TB] 16302701ns retrying debug reg access
-# [TB] 16332001ns retrying debug reg access
-# [TB] 16361301ns retrying debug reg access
-# [TB] 16390601ns retrying debug reg access
-# [TB] 16419901ns retrying debug reg access
-# [TB] 16449201ns retrying debug reg access
-# [TB] 16478501ns retrying debug reg access
-# [TB] 16507801ns retrying debug reg access
-# [TB] 16537101ns retrying debug reg access
-# [TB] 16566401ns retrying debug reg access
-# [TB] 16595701ns retrying debug reg access
-# [TB] 16625001ns retrying debug reg access
-# [TB] 16654301ns retrying debug reg access
-# [TB] 16683601ns retrying debug reg access
-# [TB] 16712901ns retrying debug reg access
-# [TB] 16742201ns retrying debug reg access
-# [TB] 16771501ns retrying debug reg access
-# [TB] 16800801ns retrying debug reg access
-# [TB] 16830101ns retrying debug reg access
-# [TB] 16859401ns retrying debug reg access
-# [TB] 16888701ns retrying debug reg access
-# [TB] 16918001ns retrying debug reg access
-# [TB] 16947301ns retrying debug reg access
-# [TB] 16976601ns retrying debug reg access
-# [TB] 17005901ns retrying debug reg access
+# [TB] 28492501ns - Resuming the CORE
+# [TB] 28551301ns retrying debug reg access
+# [TB] 28580601ns retrying debug reg access
+# [TB] 28609901ns retrying debug reg access
+# [TB] 28639201ns retrying debug reg access
+# [TB] 28668501ns retrying debug reg access
+# [TB] 28697801ns retrying debug reg access
+# [TB] 28727101ns retrying debug reg access
+# [TB] 28756401ns retrying debug reg access
+# [TB] 28785701ns retrying debug reg access
+# [TB] 28815001ns retrying debug reg access
+# [TB] 28844301ns retrying debug reg access
+# [TB] 28873601ns retrying debug reg access
+# [TB] 28902901ns retrying debug reg access
+# [TB] 28932201ns retrying debug reg access
+# [TB] 28961501ns retrying debug reg access
+# [TB] 28990801ns retrying debug reg access
+# [TB] 29020101ns retrying debug reg access
+# [TB] 29049401ns retrying debug reg access
+# [TB] 29078701ns retrying debug reg access
+# [TB] 29108001ns retrying debug reg access
+# [TB] 29137301ns retrying debug reg access
+# [TB] 29166601ns retrying debug reg access
+# [TB] 29195901ns retrying debug reg access
+# [TB] 29225201ns retrying debug reg access
+# [TB] 29254501ns retrying debug reg access
 # [STDOUT-CL31_PE0] Entering main controller
-# [TB] 17564601ns - Waiting for end of computation
-# [STDOUT-CL0_PE3] Entered cluster on cluster 0 core 3
-# [STDOUT-CL0_PE5] Entered cluster on cluster 0 core 5
+# [TB] 29813201ns - Waiting for end of computation
 # [STDOUT-CL0_PE1] Entered cluster on cluster 0 core 1
-# [STDOUT-CL0_PE2] Entered cluster on cluster 0 core 2
-# [STDOUT-CL0_PE7] Entered cluster on cluster 0 core 7
-# [STDOUT-CL0_PE4] Entered cluster on cluster 0 core 4
-# [STDOUT-CL0_PE6] Entered cluster on cluster 0 core 6
+# [STDOUT-CL0_PE3] Entered cluster on cluster 0 core 3
 # [STDOUT-CL0_PE0] Entered cluster on cluster 0 core 0
-# [STDOUT-CL0_PE7] 
-# [STDOUT-CL0_PE1] 
-# [STDOUT-CL0_PE2] 
+# [STDOUT-CL0_PE2] Entered cluster on cluster 0 core 2
+# [STDOUT-CL0_PE4] Entered cluster on cluster 0 core 4
+# [STDOUT-CL0_PE5] Entered cluster on cluster 0 core 5
+# [STDOUT-CL0_PE7] Entered cluster on cluster 0 core 7
+# [STDOUT-CL0_PE6] Entered cluster on cluster 0 core 6
 # [STDOUT-CL0_PE3] 
 # [STDOUT-CL0_PE6] 
-# [STDOUT-CL0_PE4] 
-# [STDOUT-CL0_PE0] 
 # [STDOUT-CL0_PE5] 
-# [STDOUT-CL0_PE0] FFT0 Task 2: Total errors = 0
-# [STDOUT-CL0_PE2] FFT2 Task 2: Total errors = 8
-# [STDOUT-CL0_PE3] FFT3 Task 2: Total errors = 0
-# [STDOUT-CL0_PE5] FFT5 Task 2: Total errors = 0
-# [STDOUT-CL0_PE6] FFT6 Task 2: Total errors = 0
-# [STDOUT-CL0_PE1] FFT1 Task 2: Total errors = 8
-# [STDOUT-CL0_PE4] FFT4 Task 2: Total errors = 0
-# [STDOUT-CL0_PE7] FFT7 Task 2: Total errors = 16
-# [TB] 20657901ns - Received status core: 0x00000000
-# ** Note: $stop    : /home/abdelhay21/GP/rtl/tb/tb_pulp.sv(1008)
-#    Time: 20657901 ns  Iteration: 0  Instance: /tb_pulp
-# Break at /home/abdelhay21/GP/rtl/tb/tb_pulp.sv line 1008
-# End time: 22:56:05 on Apr 26,2026, Elapsed time: 0:06:18
+# [STDOUT-CL0_PE4] 
+# [STDOUT-CL0_PE7] 
+# [STDOUT-CL0_PE3] FFT3 Task 1: Total errors = 2048
+# [STDOUT-CL0_PE6] FFT6 Task 1: Total errors = 2048
+# [STDOUT-CL0_PE5] FFT5 Task 1: Total errors = 2048
+# [STDOUT-CL0_PE4] FFT4 Task 1: Total errors = 2048
+# [STDOUT-CL0_PE7] FFT7 Task 1: Total errors = 2048
+# [STDOUT-CL0_PE0] 
+# [STDOUT-CL0_PE2] 
+# [STDOUT-CL0_PE1] 
+# [STDOUT-CL0_PE2] FFT2 Task 1: Total errors = 0
+# [STDOUT-CL0_PE1] FFT1 Task 1: Total errors = 0
+# [STDOUT-CL0_PE0] FFT0 Task 1: Total errors = 32
+# 35462639ns, Branch decision is X in module tb_pulp.i_dut.cluster_domain_i.cluster_i.CORE[3].core_region_i.CL_CORE.RISCV_CORE.id_stage_i
+# ** Note: $stop    : /home/abdelhay21/GP/.bender/git/checkouts/cv32e40p-0a3884e05ea5a482/rtl/riscv_id_stage.sv(1631)
+#    Time: 35462639454 ps  Iteration: 24  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/CORE[3]/core_region_i/CL_CORE/RISCV_CORE/id_stage_i
+# Break at /home/abdelhay21/GP/.bender/git/checkouts/cv32e40p-0a3884e05ea5a482/rtl/riscv_id_stage.sv line 1631
+# End time: 07:08:04 on May 02,2026, Elapsed time: 0:06:49
 # Errors: 4, Warnings: 20

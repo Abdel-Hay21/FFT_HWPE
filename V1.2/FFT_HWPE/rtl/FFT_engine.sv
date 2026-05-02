@@ -21,21 +21,23 @@ import hwpe_stream_package::*;
 import hci_package::*;
 
 module FFT_engine #(
-  parameter int unsigned BW_ALIGNED = 256,
-  parameter int unsigned DATA_WIDTH = 12,
-  parameter int unsigned FIFO_DEPTH = 8
+  parameter int unsigned BW_ALIGNED     = 256,
+  parameter int unsigned DATA_WIDTH     = 12,
+  parameter int unsigned FIFO_DEPTH_IN  = 2,
+  parameter int unsigned FIFO_DEPTH_OUT = 8
 ) (
   // global signals
-  input  logic                   clk_i,
-  input  logic                   rst_ni,
-  input  logic                   test_mode_i,
+  input  logic                             clk_i,
+  input  logic                             rst_ni,
+  input  logic                             test_mode_i,
   // input data stream + handshake
-  hwpe_stream_intf_stream.sink   data_in,
+  hwpe_stream_intf_stream.sink             data_in,
   // output data stream + handshake
-  hwpe_stream_intf_stream.source data_out,
+  hwpe_stream_intf_stream.source           data_out,
   // control channel
-  input  ctrl_engine_t           ctrl_i,
-  output flags_engine_t          flags_o
+  input  ctrl_engine_t                     ctrl_i,
+  output flags_engine_t                    flags_o,
+  output logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_fifo_in
 );
 
   logic  [BW_ALIGNED-1:0]            fifo_data_i, sample_data_in;
@@ -50,7 +52,6 @@ module FFT_engine #(
   logic  [$clog2(BW_ALIGNED/32)-1:0] count_to_pop_data_in, count_to_disable_valid;
   logic  [$clog2(BW_ALIGNED/32)-1:0] count_to_push_data_out;
   logic                              data_in_valid_pulse,  pulse_done;
-
 
 
   fft8_dif #(
@@ -70,8 +71,8 @@ module FFT_engine #(
 
   // fifo data_in
   fifo_v3 #(
-    .DATA_WIDTH ( BW_ALIGNED ),
-    .DEPTH      ( FIFO_DEPTH )
+    .DATA_WIDTH (   BW_ALIGNED  ),
+    .DEPTH      ( FIFO_DEPTH_IN )
   ) fifo_pre_data_in (
     .clk_i      ( clk_i                                ),
     .rst_ni     ( rst_ni                               ),
@@ -79,7 +80,7 @@ module FFT_engine #(
     .testmode_i ( test_mode_i                          ),
     .full_o     ( full_data_in                         ),
     .empty_o    ( empty_data_in                        ),
-    .usage_o    (                                      ),
+    .usage_o    ( usage_fifo_in                        ),
     .data_i     ( data_in.data                         ),
     .push_i     ( data_in.ready && data_in_valid_pulse ),
     .data_o     ( fifo_data_o                          ),
@@ -88,8 +89,8 @@ module FFT_engine #(
   
   // fifo data_out
   fifo_v3 #(
-    .DATA_WIDTH ( BW_ALIGNED ),
-    .DEPTH      ( FIFO_DEPTH )
+    .DATA_WIDTH (   BW_ALIGNED   ),
+    .DEPTH      ( FIFO_DEPTH_OUT )
   ) fifo_post_data_out (
     .clk_i      ( clk_i                            ),
     .rst_ni     ( rst_ni                           ),
@@ -123,7 +124,7 @@ module FFT_engine #(
     if (!rst_ni) begin
       count_to_pop_data_in <= 0;
     end
-    else if (!empty_data_in)
+    else if (!empty_data_in || valid_in)
     begin
       count_to_pop_data_in <= count_to_pop_data_in+1;
     end
@@ -227,6 +228,11 @@ module FFT_engine #(
     if (!rst_ni) begin
       count_to_disable_valid <= 0;
       valid_in_finish        <= 0;
+    end
+    else if (!empty_data_in)
+    begin
+      valid_in_finish        <= 0;
+      count_to_disable_valid <= 0;
     end
     else if (empty_data_in && valid_in)
     begin

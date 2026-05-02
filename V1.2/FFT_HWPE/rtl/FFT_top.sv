@@ -20,22 +20,24 @@ import hci_package::*;
 import FFT_package::*;
 
 module FFT_top #(
-  parameter int unsigned ID         = 10,
-  parameter int unsigned BW         = 288,
-  parameter int unsigned FIFO_DEPTH = 8,
-  parameter int unsigned N_CORES    = 8,
-  parameter int unsigned N_CONTEXT  = 2
+  parameter int unsigned ID             = 10,
+  parameter int unsigned BW             = 288,
+  parameter int unsigned FIFO_DEPTH_IN  = 2,
+  parameter int unsigned FIFO_DEPTH_OUT = 8,
+  parameter int unsigned N_CORES        = 8,
+  parameter int unsigned N_CONTEXT      = 2
 ) (
   // global signals
-  input  logic                    clk_i,
-  input  logic                    rst_ni,
-  input  logic                    test_mode_i,
+  input  logic                             clk_i,
+  input  logic                             rst_ni,
+  input  logic                             test_mode_i,
+  output logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_fifo_in,
   // events
-  output logic [N_CORES-1:0][1:0] evt_o,
+  output logic [N_CORES-1:0]         [1:0] evt_o,
   // tcdm master ports
-  hci_core_intf.master            tcdm,
+  hci_core_intf.master                     tcdm,
   // periph slave port
-  hwpe_ctrl_intf_periph.slave     periph
+  hwpe_ctrl_intf_periph.slave              periph
 );
 
   // We "sacrifice" 1 word of memory interface bandwidth in order to support
@@ -101,17 +103,19 @@ module FFT_top #(
 
 
   FFT_engine #(
-    .BW_ALIGNED ( BW_ALIGNED ),
-    .DATA_WIDTH (     12     ),
-    .FIFO_DEPTH ( FIFO_DEPTH )
+    .BW_ALIGNED     (   BW_ALIGNED   ),
+    .DATA_WIDTH     (       12       ),
+    .FIFO_DEPTH_IN  ( FIFO_DEPTH_IN  ),
+    .FIFO_DEPTH_OUT ( FIFO_DEPTH_OUT )
   ) i_engine (
-    .clk_i      ( clk_i          ),
-    .rst_ni     ( rst_ni         ),
-    .test_mode_i( test_mode_i    ),
-    .data_in    ( data_in        ),
-    .data_out   ( data_out       ),
-    .ctrl_i     ( engine_ctrl    ),
-    .flags_o    ( engine_flags   )
+    .clk_i         ( clk_i          ),
+    .rst_ni        ( rst_ni         ),
+    .test_mode_i   ( test_mode_i    ),
+    .usage_fifo_in ( usage_fifo_in  ),
+    .data_in       ( data_in        ),
+    .data_out      ( data_out       ),
+    .ctrl_i        ( engine_ctrl    ),
+    .flags_o       ( engine_flags   )
   );
 
 endmodule

@@ -26,20 +26,23 @@ import hci_package::*;
 
 module hwpe_subsystem
 #(
-  parameter N_CORES       = 8,
-  parameter N_MASTER_PORT = 8,
-  parameter ID_WIDTH      = 8
+  parameter N_CORES        = 8,
+  parameter N_MASTER_PORT  = 8,
+  parameter ID_WIDTH       = 8,
+  parameter FIFO_DEPTH_IN  = 2,
+  parameter FIFO_DEPTH_OUT = 4
 )
 (
-  input  logic                    clk,
-  input  logic                    rst_n,
-  input  logic                    test_mode,
+  input  logic                             clk,
+  input  logic                             rst_n,
+  input  logic                             test_mode,
   
-  hci_core_intf.master            s_hci_hwpe_FFT [7:0],
-  XBAR_PERIPH_BUS.Slave           hwpe_cfg_slave,
+  hci_core_intf.master                     s_hci_hwpe_FFT [7:0],
+  XBAR_PERIPH_BUS.Slave                    hwpe_cfg_slave,
 
-  output logic [N_CORES-1:0][3:0] evt_o,
-  output logic                    busy_o
+  output logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_fifo_in  [7:0],
+  output logic [N_CORES-1:0][3:0]          evt_o,
+  output logic                             busy_o
 );
 
   // Internal signals:
@@ -61,17 +64,20 @@ module hwpe_subsystem
     for(genvar i=0; i<8; i++) 
     begin : FFT_gen
      FFT_top #(
-     .ID      ( ID_WIDTH           ),
-     .N_CORES ( N_CORES            ), 
-     .BW      ( N_MASTER_PORT * 32 )
+     .ID             ( ID_WIDTH           ),
+     .N_CORES        ( N_CORES            ), 
+     .BW             ( N_MASTER_PORT * 32 ),
+     .FIFO_DEPTH_IN  ( FIFO_DEPTH_IN      ),
+     .FIFO_DEPTH_OUT ( FIFO_DEPTH_OUT     )
      ) 
      i_fft (
-     .clk_i       ( clk                ),
-     .rst_ni      ( rst_n              ), 
-     .test_mode_i ( test_mode          ),
-     .evt_o       ( evt_internal[i]    ),
-     .tcdm        ( s_hci_hwpe_FFT[i]  ), 
-     .periph      ( periph_FFT[i]      )
+     .clk_i         ( clk                ),
+     .rst_ni        ( rst_n              ), 
+     .test_mode_i   ( test_mode          ),
+     .evt_o         ( evt_internal[i]    ),
+     .usage_fifo_in ( usage_fifo_in[i]   ),
+     .tcdm          ( s_hci_hwpe_FFT[i]  ), 
+     .periph        ( periph_FFT[i]      )
      );
      // Route Engine i Completion Event to Core i
      assign evt_o[i] = {2'b0, evt_internal[i][i]}; 

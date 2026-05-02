@@ -19,38 +19,47 @@
 import hci_package::*;
 
 module hci_interconnect #(
-  parameter int unsigned N_HWPE  = 4                        , // Number of HWPEs attached to the port
-  parameter int unsigned N_CORE  = 8                        , // Number of Core ports
-  parameter int unsigned N_DMA   = 4                        , // Number of DMA ports
-  parameter int unsigned N_EXT   = 4                        , // Number of External ports
-  parameter int unsigned N_MEM   = 16                       , // Number of Memory banks
-  parameter int unsigned AWC     = hci_package::DEFAULT_AW  , // Address Width Core   (slave ports)
-  parameter int unsigned AWM     = hci_package::DEFAULT_AW  , // Address width memory (master ports)
-  parameter int unsigned DW_LIC  = hci_package::DEFAULT_DW  , // Data Width for Log Interconnect
-  parameter int unsigned BW_LIC  = hci_package::DEFAULT_BW  , // Byte Width for Log Interconnect
-  parameter int unsigned UW_LIC  = hci_package::DEFAULT_UW  , // User Width for Log Interconnect
-  parameter int unsigned DW_SIC  = 128                      , // UNUSED!!!
-  parameter int unsigned TS_BIT  = 21                       , // TEST_SET_BIT (for Log Interconnect)
-  parameter int unsigned IW      = N_HWPE+N_CORE+N_DMA+N_EXT, // ID Width
-  parameter int unsigned EXPFIFO = 0                        , // FIFO Depth for HWPE Interconnect
-  parameter int unsigned DWH     = hci_package::DEFAULT_DW  , // Data Width for HWPE Interconnect
-  parameter int unsigned AWH     = hci_package::DEFAULT_AW  , // Address Width for HWPE Interconnect
-  parameter int unsigned BWH     = hci_package::DEFAULT_BW  , // Byte Width for HWPE Interconnect
-  parameter int unsigned WWH     = hci_package::DEFAULT_WW  , // Word Width for HWPE Interconnect
-  parameter int unsigned OWH     = AWH                      , // Offset Width for HWPE Interconnect
-  parameter int unsigned UWH     = hci_package::DEFAULT_UW  , // User Width for HWPE Interconnect
-  parameter int unsigned SEL_LIC = 0                          // Log interconnect type selector
+  parameter int unsigned N_HWPE         = 4                        , // Number of HWPEs attached to the port
+  parameter int unsigned FIFO_DEPTH_IN  = 2                        , // Depth  of FIFO HWPEs
+  parameter int unsigned N_CORE         = 8                        , // Number of Core ports
+  parameter int unsigned N_DMA          = 4                        , // Number of DMA ports
+  parameter int unsigned N_EXT          = 4                        , // Number of External ports
+  parameter int unsigned N_MEM          = 16                       , // Number of Memory banks
+  parameter int unsigned AWC            = hci_package::DEFAULT_AW  , // Address Width Core   (slave ports)
+  parameter int unsigned AWM            = hci_package::DEFAULT_AW  , // Address width memory (master ports)
+  parameter int unsigned DW_LIC         = hci_package::DEFAULT_DW  , // Data Width for Log Interconnect
+  parameter int unsigned BW_LIC         = hci_package::DEFAULT_BW  , // Byte Width for Log Interconnect
+  parameter int unsigned UW_LIC         = hci_package::DEFAULT_UW  , // User Width for Log Interconnect
+  parameter int unsigned DW_SIC         = 128                      , // UNUSED!!!
+  parameter int unsigned TS_BIT         = 21                       , // TEST_SET_BIT (for Log Interconnect)
+  parameter int unsigned IW             = N_HWPE+N_CORE+N_DMA+N_EXT, // ID Width
+  parameter int unsigned EXPFIFO        = 0                        , // FIFO Depth for HWPE Interconnect
+  parameter int unsigned DWH            = hci_package::DEFAULT_DW  , // Data Width for HWPE Interconnect
+  parameter int unsigned AWH            = hci_package::DEFAULT_AW  , // Address Width for HWPE Interconnect
+  parameter int unsigned BWH            = hci_package::DEFAULT_BW  , // Byte Width for HWPE Interconnect
+  parameter int unsigned WWH            = hci_package::DEFAULT_WW  , // Word Width for HWPE Interconnect
+  parameter int unsigned OWH            = AWH                      , // Offset Width for HWPE Interconnect
+  parameter int unsigned UWH            = hci_package::DEFAULT_UW  , // User Width for HWPE Interconnect
+  parameter int unsigned SEL_LIC        = 0                          // Log interconnect type selector
 ) (
-  input logic                   clk_i               ,
-  input logic                   rst_ni              ,
-  input logic                   clear_i             ,
-  input hci_interconnect_ctrl_t ctrl_i              ,
-  hci_core_intf.slave           cores   [N_CORE-1:0],
-  hci_core_intf.slave           dma     [N_DMA-1:0] ,
-  hci_core_intf.slave           ext     [N_EXT-1:0] ,
-  hci_mem_intf.master           mems    [N_MEM-1:0] ,
-  hci_core_intf.slave           hwpe    [N_HWPE-1:0]
+  input logic                             clk_i                        ,
+  input logic                             rst_ni                       ,
+  input logic                             clear_i                      ,
+  input hci_interconnect_ctrl_t           ctrl_i                       ,
+  input logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_fifo_in   [N_HWPE-1:0] ,
+  hci_core_intf.slave                     cores           [N_CORE-1:0] ,
+  hci_core_intf.slave                     dma             [N_DMA-1:0 ] ,
+  hci_core_intf.slave                     ext             [N_EXT-1:0 ] ,
+  hci_mem_intf.master                     mems            [N_MEM-1:0 ] ,
+  hci_core_intf.slave                     hwpe            [N_HWPE-1:0]
 );
+  
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_out_0_1     ;
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_out_2_3     ;
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_out_4_5     ;
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_out_6_7     ;
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_out_0_1_2_3 ;
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_out_4_5_6_7 ;
 
   hci_core_intf #(
     .UW ( UW_LIC )
@@ -209,87 +218,115 @@ module hci_interconnect #(
      end
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_1 (
-        .clk_i   ( clk_i               ),
-        .rst_ni  ( rst_ni              ),
-        .clear_i ( clear_i             ),
-        .in_high ( hwpe_mem[0]         ),
-        .in_low  ( hwpe_mem[1]         ),
-        .out     ( hwpe_mem_arb_0_1    )
+        .clk_i      ( clk_i               ),
+        .rst_ni     ( rst_ni              ),
+        .clear_i    ( clear_i             ),
+        .usage_high ( usage_fifo_in[0]    ),
+        .usage_low  ( usage_fifo_in[1]    ),
+        .usage_out  ( usage_out_0_1       ),
+        .in_high    ( hwpe_mem[0]         ),
+        .in_low     ( hwpe_mem[1]         ),
+        .out        ( hwpe_mem_arb_0_1    )
       );
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_2 (
-        .clk_i   ( clk_i               ),
-        .rst_ni  ( rst_ni              ),
-        .clear_i ( clear_i             ),
-        .in_high ( hwpe_mem[2]         ),
-        .in_low  ( hwpe_mem[3]         ),
-        .out     ( hwpe_mem_arb_2_3    )
+        .clk_i      ( clk_i               ),
+        .rst_ni     ( rst_ni              ),
+        .clear_i    ( clear_i             ),
+        .usage_high ( usage_fifo_in[2]    ),
+        .usage_low  ( usage_fifo_in[3]    ),
+        .usage_out  ( usage_out_2_3       ),
+        .in_high    ( hwpe_mem[2]         ),
+        .in_low     ( hwpe_mem[3]         ),
+        .out        ( hwpe_mem_arb_2_3    )
       );
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_3 (
-        .clk_i   ( clk_i               ),
-        .rst_ni  ( rst_ni              ),
-        .clear_i ( clear_i             ),
-        .in_high ( hwpe_mem[4]         ),
-        .in_low  ( hwpe_mem[5]         ),
-        .out     ( hwpe_mem_arb_4_5    )
+        .clk_i      ( clk_i               ),
+        .rst_ni     ( rst_ni              ),
+        .clear_i    ( clear_i             ),
+        .usage_high ( usage_fifo_in[4]    ),
+        .usage_low  ( usage_fifo_in[5]    ),
+        .usage_out  ( usage_out_4_5       ),
+        .in_high    ( hwpe_mem[4]         ),
+        .in_low     ( hwpe_mem[5]         ),
+        .out        ( hwpe_mem_arb_4_5    )
       );
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_4 (
-        .clk_i   ( clk_i               ),
-        .rst_ni  ( rst_ni              ),
-        .clear_i ( clear_i             ),
-        .in_high ( hwpe_mem[6]         ),
-        .in_low  ( hwpe_mem[7]         ),
-        .out     ( hwpe_mem_arb_6_7    )
+        .clk_i      ( clk_i               ),
+        .rst_ni     ( rst_ni              ),
+        .clear_i    ( clear_i             ),
+        .usage_high ( usage_fifo_in[6]    ),
+        .usage_low  ( usage_fifo_in[7]    ),
+        .usage_out  ( usage_out_6_7       ),
+        .in_high    ( hwpe_mem[6]         ),
+        .in_low     ( hwpe_mem[7]         ),
+        .out        ( hwpe_mem_arb_6_7    )
       );
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_5 (
-        .clk_i   ( clk_i                ),
-        .rst_ni  ( rst_ni               ),
-        .clear_i ( clear_i              ),
-        .in_high ( hwpe_mem_arb_0_1     ),
-        .in_low  ( hwpe_mem_arb_2_3     ),
-        .out     ( hwpe_mem_arb_0_1_2_3 )
+        .clk_i      ( clk_i                ),
+        .rst_ni     ( rst_ni               ),
+        .clear_i    ( clear_i              ),
+        .usage_high ( usage_out_0_1        ),
+        .usage_low  ( usage_out_2_3        ),
+        .usage_out  ( usage_out_0_1_2_3    ),
+        .in_high    ( hwpe_mem_arb_0_1     ),
+        .in_low     ( hwpe_mem_arb_2_3     ),
+        .out        ( hwpe_mem_arb_0_1_2_3 )
       );
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_6 (
-        .clk_i   ( clk_i                ),
-        .rst_ni  ( rst_ni               ),
-        .clear_i ( clear_i              ),
-        .in_high ( hwpe_mem_arb_4_5     ),
-        .in_low  ( hwpe_mem_arb_6_7     ),
-        .out     ( hwpe_mem_arb_4_5_6_7 )
+        .clk_i      ( clk_i                ),
+        .rst_ni     ( rst_ni               ),
+        .clear_i    ( clear_i              ),
+        .usage_high ( usage_out_4_5        ),
+        .usage_low  ( usage_out_6_7        ),
+        .usage_out  ( usage_out_4_5_6_7    ),
+        .in_high    ( hwpe_mem_arb_4_5     ),
+        .in_low     ( hwpe_mem_arb_6_7     ),
+        .out        ( hwpe_mem_arb_4_5_6_7 )
       );
 
       hwpe_voting #(
-        .NB_CHAN  ( N_MEM ),
-        .SELC_M_S (   0   )
+        .NB_CHAN       (    N_MEM      ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN ),
+        .SELC_M_S      (      0        )
       ) arbiter_7 (
-        .clk_i   ( clk_i                ),
-        .rst_ni  ( rst_ni               ),
-        .clear_i ( clear_i              ),
-        .in_high ( hwpe_mem_arb_0_1_2_3 ),
-        .in_low  ( hwpe_mem_arb_4_5_6_7 ),
-        .out     ( hwpe_final_vote      )
+        .clk_i      ( clk_i                ),
+        .rst_ni     ( rst_ni               ),
+        .clear_i    ( clear_i              ),
+        .usage_high ( usage_out_0_1_2_3    ),
+        .usage_low  ( usage_out_4_5_6_7    ),
+        .usage_out  (                      ),
+        .in_high    ( hwpe_mem_arb_0_1_2_3 ),
+        .in_low     ( hwpe_mem_arb_4_5_6_7 ),
+        .out        ( hwpe_final_vote      )
       );
 
 

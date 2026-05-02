@@ -43,15 +43,168 @@ add wave -noupdate -expand -group {i_fft[1]} {/tb_pulp/i_dut/cluster_domain_i/cl
 add wave -noupdate -expand -group {i_fft[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/i_fft/out_i}
 add wave -noupdate -expand -group {i_fft[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/i_fft/valid_out}
 add wave -noupdate -expand -group {i_fft[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/i_fft/frame_done}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/clk}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/rst_n}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/valid_in}
-add wave -noupdate -expand -group {i_fft[2]} -radix hexadecimal -childformat {{{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[11]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[10]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[9]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[8]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[7]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[6]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[5]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[4]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[3]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[2]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[1]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[0]} -radix binary}} -subitemconfig {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[11]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[10]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[9]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[8]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[7]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[6]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[5]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[4]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[3]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[2]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[1]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[0]} {-height 14 -radix binary}} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r}
-add wave -noupdate -expand -group {i_fft[2]} -radix hexadecimal {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_i}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/out_r}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/out_i}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/valid_out}
-add wave -noupdate -expand -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/frame_done}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/clk_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/rst_ni}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/test_mode_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/clear_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/ctrl_streamer_o}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/flags_streamer_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/ctrl_engine_o}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/flags_engine_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/ctrl_slave_o}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/flags_slave_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/reg_file_i}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/clear_streamer}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/streamer_ctrl_cfg}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/cs}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/ns}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/New_Task}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/Start_Execute_Task}
+add wave -noupdate -group {i_fsm[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/i_fsm/counter_for_check_new_task}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/DATA_WIDTH}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/STRB_WIDTH}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/BYPASS_VCR_ASSERT}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/BYPASS_VDR_ASSERT}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/clk}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/valid}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/ready}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/data}
+add wave -noupdate -group {data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_in/strb}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/DATA_WIDTH}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/STRB_WIDTH}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/BYPASS_VCR_ASSERT}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/BYPASS_VDR_ASSERT}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/clk}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/valid}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/ready}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/data}
+add wave -noupdate -group {data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/data_out/strb}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/BW_ALIGNED}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/DATA_WIDTH}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/clk_i}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/rst_ni}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/test_mode_i}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/ctrl_i}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/flags_o}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_data_i}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/sample_data_in}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_data_o}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/sample_data_out}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/in32}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/out32}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/empty_data_in}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/full_data_in}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/pop_data_in}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/empty_data_out}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/full_data_out}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/push_data_out}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/valid_in}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/valid_out}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/valid_in_start}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/valid_in_finish}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/count_to_pop_data_in}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/count_to_disable_valid}
+add wave -noupdate -group {i_engine[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/count_to_push_data_out}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/N_CORES}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/N_CONTEXT}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/N_IO_REGS}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/ID}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/clk_i}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/rst_ni}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/test_mode_i}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/clear_o}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/evt_o}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/ctrl_streamer_o}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/flags_streamer_i}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/ctrl_engine_o}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/flags_engine_i}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/clear_streamer}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/slave_ctrl}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/slave_flags}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/reg_file.hwpe_params[3]}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/reg_file.hwpe_params[2]}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/reg_file.hwpe_params[1]}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/reg_file.hwpe_params[0]}
+add wave -noupdate -group {i_ctrl[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_ctrl/reg_file}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/FALL_THROUGH}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/DATA_WIDTH}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/DEPTH}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/ADDR_DEPTH}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/FifoDepth}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/clk_i}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/rst_ni}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/flush_i}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/testmode_i}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/full_o}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/empty_o}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/usage_o}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/data_i}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/push_i}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/data_o}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/pop_i}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/gate_clock}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/read_pointer_n}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/read_pointer_q}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/write_pointer_n}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/write_pointer_q}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/status_cnt_n}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/status_cnt_q}
+add wave -noupdate -group {fifo_pre_data_in[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/mem_n}
+add wave -noupdate -group {fifo_pre_data_in[1]} -expand {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_pre_data_in/mem_q}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/FALL_THROUGH}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/DATA_WIDTH}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/DEPTH}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/ADDR_DEPTH}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/FifoDepth}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/clk_i}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/rst_ni}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/flush_i}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/testmode_i}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/full_o}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/empty_o}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/usage_o}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/data_i}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/push_i}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/data_o}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/pop_i}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/gate_clock}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/read_pointer_n}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/read_pointer_q}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/write_pointer_n}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/write_pointer_q}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/status_cnt_n}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/status_cnt_q}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/mem_n}
+add wave -noupdate -group {fifo_post_data_out[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/fifo_post_data_out/mem_q}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/DW}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/AW}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/BW}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/WW}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/OW}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/UW}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/clk}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/req}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/gnt}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/lrdy}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/add}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/wen}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/data}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/be}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/boffs}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/user}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/r_data}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/r_valid}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/r_opc}
+add wave -noupdate -group {hci_hwpe_FFT[1]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[1]/r_user}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/clk}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/rst_n}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/valid_in}
+add wave -noupdate -group {i_fft[2]} -radix hexadecimal -childformat {{{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[11]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[10]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[9]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[8]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[7]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[6]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[5]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[4]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[3]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[2]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[1]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[0]} -radix binary}} -subitemconfig {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[11]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[10]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[9]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[8]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[7]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[6]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[5]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[4]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[3]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[2]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[1]} {-height 14 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r[0]} {-height 14 -radix binary}} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_r}
+add wave -noupdate -group {i_fft[2]} -radix hexadecimal {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/in_i}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/out_r}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/out_i}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/valid_out}
+add wave -noupdate -group {i_fft[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/i_fft/frame_done}
 add wave -noupdate -expand -group {i_fft[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/i_fft/clk}
 add wave -noupdate -expand -group {i_fft[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/i_fft/rst_n}
 add wave -noupdate -expand -group {i_fft[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/i_fft/valid_in}
@@ -70,33 +223,186 @@ add wave -noupdate -expand -group {i_fft[4]} {/tb_pulp/i_dut/cluster_domain_i/cl
 add wave -noupdate -expand -group {i_fft[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine/i_fft/out_i}
 add wave -noupdate -expand -group {i_fft[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine/i_fft/valid_out}
 add wave -noupdate -expand -group {i_fft[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine/i_fft/frame_done}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/clk}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/rst_n}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/valid_in}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/in_r}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/in_i}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/out_r}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/out_i}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/valid_out}
-add wave -noupdate -expand -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/frame_done}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/clk}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/rst_n}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/valid_in}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/in_r}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/in_i}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/out_r}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/out_i}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/valid_out}
-add wave -noupdate -expand -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/frame_done}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/clk}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/rst_n}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/valid_in}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/in_r}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/in_i}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/out_r}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/out_i}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/valid_out}
-add wave -noupdate -expand -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/frame_done}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/clk_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/rst_ni}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/test_mode_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/clear_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ctrl_streamer_o}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/flags_streamer_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ctrl_engine_o}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/flags_engine_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ctrl_slave_o}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/flags_slave_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/reg_file_i}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/clear_streamer}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/streamer_ctrl_cfg}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/cs}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ns}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/New_Task}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/Start_Execute_Task}
+add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/counter_for_check_new_task}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/DATA_WIDTH}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/STRB_WIDTH}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/BYPASS_VCR_ASSERT}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/BYPASS_VDR_ASSERT}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/clk}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/valid}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/ready}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/data}
+add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/strb}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/DATA_WIDTH}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/STRB_WIDTH}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/BYPASS_VCR_ASSERT}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/BYPASS_VDR_ASSERT}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/clk}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/valid}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/ready}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/data}
+add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/strb}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/BW_ALIGNED}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/DATA_WIDTH}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/clk_i}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/rst_ni}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/test_mode_i}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/ctrl_i}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/flags_o}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_data_i}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/sample_data_in}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_data_o}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/sample_data_out}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/in32}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/out32}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/empty_data_in}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/full_data_in}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/pop_data_in}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/empty_data_out}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/full_data_out}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/push_data_out}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_in}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_out}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_in_start}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_in_finish}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/count_to_pop_data_in}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/count_to_disable_valid}
+add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/count_to_push_data_out}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/N_CORES}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/N_CONTEXT}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/N_IO_REGS}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/ID}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/clk_i}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/rst_ni}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/test_mode_i}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/clear_o}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/evt_o}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/ctrl_streamer_o}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/flags_streamer_i}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/ctrl_engine_o}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/flags_engine_i}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/clear_streamer}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/slave_ctrl}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/slave_flags}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[3]}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[2]}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[1]}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[0]}
+add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/FALL_THROUGH}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/DATA_WIDTH}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/DEPTH}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/ADDR_DEPTH}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/FifoDepth}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/clk_i}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/rst_ni}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/flush_i}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/testmode_i}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/full_o}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/empty_o}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/usage_o}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/data_i}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/push_i}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/data_o}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/pop_i}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/gate_clock}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/read_pointer_n}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/read_pointer_q}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/write_pointer_n}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/write_pointer_q}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/status_cnt_n}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/status_cnt_q}
+add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/mem_n}
+add wave -noupdate -group {fifo_pre_data_in[3]} -expand {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/mem_q}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/FALL_THROUGH}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/DATA_WIDTH}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/DEPTH}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/ADDR_DEPTH}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/FifoDepth}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/clk_i}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/rst_ni}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/flush_i}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/testmode_i}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/full_o}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/empty_o}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/usage_o}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/data_i}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/push_i}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/data_o}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/pop_i}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/gate_clock}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/read_pointer_n}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/read_pointer_q}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/write_pointer_n}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/write_pointer_q}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/status_cnt_n}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/status_cnt_q}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/mem_n}
+add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/mem_q}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/DW}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/AW}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/BW}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/WW}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/OW}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/UW}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/clk}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/req}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/gnt}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/lrdy}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/add}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/wen}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/data}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/be}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/boffs}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/user}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_data}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_valid}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_opc}
+add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_user}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/clk}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/rst_n}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/valid_in}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/in_r}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/in_i}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/out_r}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/out_i}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/valid_out}
+add wave -noupdate -group {i_fft[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/i_fft/frame_done}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/clk}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/rst_n}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/valid_in}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/in_r}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/in_i}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/out_r}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/out_i}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/valid_out}
+add wave -noupdate -group {i_fft[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/i_fft/frame_done}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/clk}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/rst_n}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/valid_in}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/in_r}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/in_i}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/out_r}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/out_i}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/valid_out}
+add wave -noupdate -group {i_fft[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/i_fft/frame_done}
 add wave -noupdate -group {i_fsm[0]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_ctrl/i_fsm/clk_i}
 add wave -noupdate -group {i_fsm[0]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_ctrl/i_fsm/rst_ni}
 add wave -noupdate -group {i_fsm[0]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_ctrl/i_fsm/test_mode_i}
@@ -357,160 +663,6 @@ add wave -noupdate -group fifo_post_data_out {/tb_pulp/i_dut/cluster_domain_i/cl
 add wave -noupdate -group fifo_post_data_out {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/status_cnt_q}
 add wave -noupdate -group fifo_post_data_out -childformat {{{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/mem_n[1]} -radix binary} {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/mem_n[0]} -radix binary}} -expand -subitemconfig {{/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/mem_n[1]} {-height 15 -radix binary} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/mem_n[0]} {-height 15 -radix binary}} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/mem_n}
 add wave -noupdate -group fifo_post_data_out {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/fifo_post_data_out/mem_q}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/clk_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/rst_ni}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/test_mode_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/clear_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ctrl_streamer_o}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/flags_streamer_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ctrl_engine_o}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/flags_engine_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ctrl_slave_o}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/flags_slave_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/reg_file_i}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/clear_streamer}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/streamer_ctrl_cfg}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/cs}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/ns}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/New_Task}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/Start_Execute_Task}
-add wave -noupdate -group {i_fsm[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/i_fsm/counter_for_check_new_task}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/DATA_WIDTH}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/STRB_WIDTH}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/BYPASS_VCR_ASSERT}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/BYPASS_VDR_ASSERT}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/clk}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/valid}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/ready}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/data}
-add wave -noupdate -group {data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_in/strb}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/DATA_WIDTH}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/STRB_WIDTH}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/BYPASS_VCR_ASSERT}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/BYPASS_VDR_ASSERT}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/clk}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/valid}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/ready}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/data}
-add wave -noupdate -group {data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/data_out/strb}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/BW_ALIGNED}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/DATA_WIDTH}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/FIFO_DEPTH}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/clk_i}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/rst_ni}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/test_mode_i}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/ctrl_i}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/flags_o}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_data_i}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/sample_data_in}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_data_o}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/sample_data_out}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/in32}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/out32}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/empty_data_in}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/full_data_in}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/pop_data_in}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/empty_data_out}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/full_data_out}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/push_data_out}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_in}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_out}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_in_start}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/valid_in_finish}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/count_to_pop_data_in}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/count_to_disable_valid}
-add wave -noupdate -group {i_engine[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/count_to_push_data_out}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/N_CORES}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/N_CONTEXT}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/N_IO_REGS}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/ID}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/clk_i}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/rst_ni}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/test_mode_i}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/clear_o}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/evt_o}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/ctrl_streamer_o}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/flags_streamer_i}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/ctrl_engine_o}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/flags_engine_i}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/clear_streamer}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/slave_ctrl}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/slave_flags}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[3]}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[2]}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[1]}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file.hwpe_params[0]}
-add wave -noupdate -group {i_ctrl[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_ctrl/reg_file}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/FALL_THROUGH}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/DATA_WIDTH}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/DEPTH}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/ADDR_DEPTH}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/FifoDepth}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/clk_i}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/rst_ni}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/flush_i}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/testmode_i}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/full_o}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/empty_o}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/usage_o}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/data_i}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/push_i}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/data_o}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/pop_i}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/gate_clock}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/read_pointer_n}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/read_pointer_q}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/write_pointer_n}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/write_pointer_q}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/status_cnt_n}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/status_cnt_q}
-add wave -noupdate -group {fifo_pre_data_in[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/mem_n}
-add wave -noupdate -group {fifo_pre_data_in[3]} -expand {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_pre_data_in/mem_q}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/FALL_THROUGH}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/DATA_WIDTH}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/DEPTH}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/ADDR_DEPTH}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/FifoDepth}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/clk_i}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/rst_ni}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/flush_i}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/testmode_i}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/full_o}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/empty_o}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/usage_o}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/data_i}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/push_i}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/data_o}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/pop_i}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/gate_clock}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/read_pointer_n}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/read_pointer_q}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/write_pointer_n}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/write_pointer_q}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/status_cnt_n}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/status_cnt_q}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/mem_n}
-add wave -noupdate -group {fifo_post_data_out[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/fifo_post_data_out/mem_q}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/DW}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/AW}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/BW}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/WW}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/OW}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/UW}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/clk}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/req}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/gnt}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/lrdy}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/add}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/wen}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/data}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/be}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/boffs}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/user}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_data}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_valid}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_opc}
-add wave -noupdate -group {hci_hwpe_FFT[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/s_hci_hwpe_FFT[3]/r_user}
 add wave -noupdate -group {i_engine[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/clk_i}
 add wave -noupdate -group {i_engine[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/rst_ni}
 add wave -noupdate -group {i_engine[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/test_mode_i}
@@ -2064,7 +2216,6 @@ add wave -noupdate -group {in_high[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[2]/r_data}
 add wave -noupdate -group {in_high[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[2]/r_id}
 add wave -noupdate -group {in_high[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[2]/r_user}
-
 add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[3]/AW}
 add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[3]/DW}
 add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[3]/BW}
@@ -2082,7 +2233,6 @@ add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[3]/r_data}
 add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[3]/r_id}
 add wave -noupdate -group {in_high[3]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[3]/r_user}
-
 add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[4]/AW}
 add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[4]/DW}
 add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[4]/BW}
@@ -2100,7 +2250,6 @@ add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[4]/r_data}
 add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[4]/r_id}
 add wave -noupdate -group {in_high[4]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[4]/r_user}
-
 add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[5]/AW}
 add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[5]/DW}
 add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[5]/BW}
@@ -2118,7 +2267,6 @@ add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[5]/r_data}
 add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[5]/r_id}
 add wave -noupdate -group {in_high[5]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[5]/r_user}
-
 add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[6]/AW}
 add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[6]/DW}
 add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[6]/BW}
@@ -2136,8 +2284,6 @@ add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[6]/r_data}
 add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[6]/r_id}
 add wave -noupdate -group {in_high[6]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[6]/r_user}
-
-
 add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[7]/AW}
 add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[7]/DW}
 add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[7]/BW}
@@ -2155,7 +2301,6 @@ add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[7]/r_data}
 add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[7]/r_id}
 add wave -noupdate -group {in_high[7]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[7]/r_user}
-
 add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[8]/AW}
 add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[8]/DW}
 add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[8]/BW}
@@ -2173,7 +2318,6 @@ add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[8]/r_data}
 add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[8]/r_id}
 add wave -noupdate -group {in_high[8]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[8]/r_user}
-
 add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[9]/AW}
 add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[9]/DW}
 add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[9]/BW}
@@ -2191,7 +2335,6 @@ add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[9]/r_data}
 add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[9]/r_id}
 add wave -noupdate -group {in_high[9]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[9]/r_user}
-
 add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[10]/AW}
 add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[10]/DW}
 add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[10]/BW}
@@ -2209,8 +2352,6 @@ add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster
 add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[10]/r_data}
 add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[10]/r_id}
 add wave -noupdate -group {in_high[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[10]/r_user}
-
-
 add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[11]/AW}
 add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[11]/DW}
 add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[11]/BW}
@@ -2228,7 +2369,6 @@ add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster
 add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[11]/r_data}
 add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[11]/r_id}
 add wave -noupdate -group {in_high[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_high[11]/r_user}
-
 add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_low[10]/AW}
 add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_low[10]/DW}
 add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_low[10]/BW}
@@ -2246,8 +2386,6 @@ add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_
 add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_low[10]/r_data}
 add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_low[10]/r_id}
 add wave -noupdate -group {in_low[10]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/in_low[10]/r_user}
-
-
 add wave -noupdate -group {out[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/out[2]/AW}
 add wave -noupdate -group {out[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/out[2]/DW}
 add wave -noupdate -group {out[2]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/out[2]/BW}
@@ -2419,7 +2557,7 @@ add wave -noupdate -group {out[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/c
 add wave -noupdate -group {out[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/out[11]/r_id}
 add wave -noupdate -group {out[11]} {/tb_pulp/i_dut/cluster_domain_i/cluster_i/cluster_interconnect_wrap_i/hci_gen/i_hci_interconnect/hwpe_interconnect_gen/arbiter_1/out[11]/r_user}
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {14219122839 ps} 0}
+WaveRestoreCursors {{Cursor 1} {25962552034 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 284
 configure wave -valuecolwidth 96
@@ -2435,4 +2573,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {14217167049 ps} {14217687306 ps}
+WaveRestoreZoom {25962304858 ps} {25963162774 ps}

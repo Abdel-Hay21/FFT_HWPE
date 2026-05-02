@@ -23,17 +23,20 @@ import hci_package::*;
 
 module hwpe_voting
 #(
-  parameter int unsigned NB_CHAN  = 2,
-  parameter int unsigned SELC_M_S = 0
+  parameter int unsigned NB_CHAN       = 2,
+  parameter int unsigned FIFO_DEPTH_IN = 2,
+  parameter int unsigned SELC_M_S      = 0
 )
 (
-  input  logic                   clk_i,
-  input  logic                   rst_ni,
-  input  logic                   clear_i,
-
-  hci_mem_intf.slave  in_high    [NB_CHAN-1:0],
-  hci_mem_intf.slave  in_low     [NB_CHAN-1:0],
-  hci_mem_intf.master out        [NB_CHAN-1:0]
+  input   logic                             clk_i,
+  input   logic                             rst_ni,
+  input   logic                             clear_i,
+  input   logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_high,
+  input   logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_low,
+  output  logic [$clog2(FIFO_DEPTH_IN)-1:0] usage_out,
+  hci_mem_intf.slave                        in_high    [NB_CHAN-1:0],
+  hci_mem_intf.slave                        in_low     [NB_CHAN-1:0],
+  hci_mem_intf.master                       out        [NB_CHAN-1:0]
 );
 
   logic [NB_CHAN-1:0] hs_req_in;
@@ -68,8 +71,20 @@ module hwpe_voting
     else
 			ls_stall_ctr_d <= 0;
 	end
-  
-  assign switch_channels_d = 0;
+
+  always_comb
+  begin
+    switch_channels_d = 0;
+    if (usage_low > usage_high) // customize the priority
+    begin
+      switch_channels_d = 0;
+      usage_out         = usage_high;
+    end
+    else begin
+      switch_channels_d = 1;
+      usage_out         = usage_low;
+    end
+  end
 
   // Req mapping
   generate

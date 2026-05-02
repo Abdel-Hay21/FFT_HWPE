@@ -35,6 +35,8 @@ module pulp_cluster
   parameter CORE_TYPE_CL            = 0, // 0 for RISCY, 1 for IBEX RV32IMC (formerly ZERORISCY), 2 for IBEX RV32EC (formerly MICRORISCY)
   parameter NB_CORES           = 8,
   parameter NB_HWPE_PORTS      = 9,
+  parameter FIFO_DEPTH_IN      = 4,
+  parameter FIFO_DEPTH_OUT     = 8,
   // number of DMA TCDM plugs, NOT number of DMA slave peripherals!
   // Everything will go to hell if you change this!
   parameter NB_DMAS            = 4,
@@ -339,6 +341,9 @@ module pulp_cluster
   logic                                       s_dma_decompr_irq;
 
   logic                                       s_decompr_done_evt;
+
+  // Signal to control the priority of HWPE to access the TCDM
+  logic [$clog2(FIFO_DEPTH_IN)-1:0]           usage_fifo_in  [7:0];
 
   assign s_dma_fc_irq = s_decompr_done_evt;
 
@@ -664,6 +669,7 @@ module pulp_cluster
   cluster_interconnect_wrap #(
     .NB_CORES           ( NB_CORES           ),
     .HWPE_PRESENT       ( HWPE_PRESENT       ),
+    .FIFO_DEPTH_IN      ( FIFO_DEPTH_IN      ),
     .NB_HWPE_PORTS      ( NB_HWPE_PORTS      ),
     .NB_DMAS            ( NB_DMAS            ),
     .NB_MPERIPHS        ( NB_MPERIPHS        ),
@@ -687,6 +693,7 @@ module pulp_cluster
 
     .core_tcdm_slave    ( s_hci_core                          ),
     .hwpe_tcdm_slave    ( s_hci_hwpe [7:0]                    ),
+    .usage_fifo_in      ( usage_fifo_in [7:0]                 ),
     .ext_slave          ( s_hci_ext                           ),
     .dma_slave          ( s_hci_dma                           ),
 
@@ -1038,15 +1045,18 @@ module pulp_cluster
       hwpe_subsystem #(
         .N_CORES       ( NB_CORES             ),
         .N_MASTER_PORT ( NB_HWPE_PORTS        ),
-        .ID_WIDTH      ( NB_CORES+NB_MPERIPHS )
+        .ID_WIDTH      ( NB_CORES+NB_MPERIPHS ),
+        .FIFO_DEPTH_IN ( FIFO_DEPTH_IN        ),
+        .FIFO_DEPTH_OUT( FIFO_DEPTH_OUT       )
       ) hwpe_subsystem_i (
-        .clk               ( clk_cluster      ),
-        .rst_n             ( s_rst_n          ),
-        .test_mode         ( test_mode_i      ),
-        .s_hci_hwpe_FFT    ( s_hci_hwpe [7:0] ),
-        .hwpe_cfg_slave    ( s_hwpe_cfg_bus   ),
-        .evt_o             ( s_hwpe_evt       ),
-        .busy_o            ( s_hwpe_busy      )
+        .clk               ( clk_cluster         ),
+        .rst_n             ( s_rst_n             ),
+        .test_mode         ( test_mode_i         ),
+        .s_hci_hwpe_FFT    ( s_hci_hwpe [7:0]    ),
+        .usage_fifo_in     ( usage_fifo_in [7:0] ),
+        .hwpe_cfg_slave    ( s_hwpe_cfg_bus      ),
+        .evt_o             ( s_hwpe_evt          ),
+        .busy_o            ( s_hwpe_busy         )
       );
     end
     else begin : no_hwpe_gen
