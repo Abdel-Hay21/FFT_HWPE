@@ -1,12 +1,14 @@
 package:
-  name: hwpe-FFT4096-MultiTasks-engine
+  name: hwpe-FFT-engine
   authors:
-    - "Sama Zayed       <samazayed2003@gmail.com>"
-
+    - "Mohamed Abdelhay  <abdelhaymohamed21@gmail.com>"
+    - "Marwan Khaled     <khaledryad816@gmail.com>"
+    - "Sama Zayed        <samazayed2003@gmail.com>"
+    
 dependencies:
-  hwpe-stream: { git: "https://github.com/pulp-platform/hwpe-stream.git", version: 1.6 }
-  hci:         { git: "https://github.com/pulp-platform/hci.git", version: 1.0.6 }
-  hwpe-ctrl:   { git: "https://github.com/pulp-platform/hwpe-ctrl.git", version: 1.6 }
+  hwpe-stream: { git: "https://github.com/pulp-platform/hwpe-stream.git", version: 1.6   }
+  hci:         { git: "https://github.com/pulp-platform/hci.git",         version: 1.0.6 }
+  hwpe-ctrl:   { git: "https://github.com/pulp-platform/hwpe-ctrl.git",   version: 1.6   }
 
 
 sources:
